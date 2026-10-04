@@ -1,0 +1,26 @@
+total 116
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
