@@ -1,0 +1,1048 @@
+ls
+pwd
+cd /
+pwd
+ls
+man ls
+ls -a
+ls -l
+ls -a -l
+cd home/
+ls
+cd vagrant/
+cd ..
+ls
+cd ubuntu/
+cd vagrant/
+ls
+ls -l
+cd repogit/
+ls
+cd UTN-FRA_SO_onBording/
+ls
+cd ..
+ls
+cat README 
+man cat
+cat << FIN
+hola
+linea1
+linea2
+linea 3
+FIN
+
+cat << FIN > archivo.txt
+Hola
+Mi nombre es Lauti
+JAJA
+FIN
+
+ls
+cat archivo.txt
+cat << FIN > archivo.txt
+Soy
+Nuevo
+algo hice
+FIN
+
+cat archivo.txt
+cat << FIN >> archivo.txt
+agrego
+una
+cosa
+FIN
+
+cat archivo.txt
+echo "Hola mundo"
+tail -n2 archivo.txt 
+ls
+man grep
+cat /proc/cpuinfo [200~  archivo.txt
+cat /proc/cpuinfo grep proce
+cat /proc/cpuinfo | grep proce
+cat /proc/cpuinfo | grep cpu
+ls
+mkdir archivos_clase 
+ls
+mv archivo.txt archivos_clase
+ls
+cd archivos_clase/
+ls
+cp archivo.txt ..
+ls
+cd ..
+ls
+rm -i archivos_clase/
+rm -Ir archivos_clase/
+ls
+rm -Ir archivos_clase/
+mkdir archivos_clase
+ls
+remdir archivos_clase
+ls
+rmdir archivos_clase/
+ls
+mkdir archivos_clase
+rm -ir archivos_clase/
+sudo cat/var/log/dmesg | tail 
+cat var/log/dmesg
+cat/var/log/dmesg
+cat /var/log/dmesg
+sudo cat /var/log/dmesg
+vagrant halt
+quit
+vagrant halt
+sudo snap install tree
+tree .
+man mkdir
+mkdir -p ejercicio1/{mama,papa}/hijo{1..4}
+ls
+tree ejercicio1/
+mkdir -p ejercicio2/{{mama,papa}/hijo{1..4},papa/{perro,gato}}
+ls
+tree ejercicio2/
+mkdir -p ejercicio3/{mama/hijo{1..4},papa/{perro,gato,hijo{1..4}}}
+tree ejercicio3/
+cat /etc/passwd
+man useradd
+sudo useradd juan
+cat /etc/passwd
+sudo cat /etc/shadow
+su juan
+sudo passwd juan
+ls /
+sudo userdel juan
+ps -ef
+kill -9 1816
+sudo kill -9 1816
+su juan
+sudo userdel juan
+sudo useradd -m -s /bin/bash pepe
+cat /etc/passwd
+ls /home/
+man usermod
+sudo usermod -c "Jose Sanchez" pepe
+cat /etc/passwd
+sudo cat /etc/shadow/
+sudo cat /etc/shadow
+sudo grep vagrant /etc/shadow
+sudo grep vagrant /etc/shadow | awk -F ':' '{print$2}'
+sudo usermod -p "$(sudo grep vagrant /etc/shadow | awk -F ':' '{print$2}')" pepe
+sudo cat /etc/shadow
+sudo grupoadd desarrolladores
+sudo groupadd desarrolladores
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo usermod -G desarrolladores pepe
+cat /etc/group
+man groupdel
+sudo useradd -m - s /bin/bash -G desarrolladores -c "Desarrollador 1" desa1
+cat /etc/group
+sudo useradd -m -s /bin/bash -G desarrolladores -c "Desarrollador 1" desa1
+cat /etc/group
+cat /etc/passwd
+ls /pw
+ls /home
+cat << FIN >> ejemplo.txt
+cualquier
+cosa
+FIN
+
+ls -l
+man chmod
+sudo chmod o+r /home/vagrant
+ls -l
+ls -l /home/
+sudo chmod o+x /home/vagrant
+ls -l /home/
+sudo chmod o-r /home/vagrant/
+us - pepe
+ls -l /home/
+man chown
+sudo mkdir hola /home/desa1/
+sudo mkdir /home/desa1/hola
+sudo ls -l /home/desa1/
+sudo chown desa1:desarrolladores /home/desa1/hola
+sudo ls -l /home/desa1/
+sudo chown desa1: /home/desa1/hola
+sudo ls -l /home/desa1/
+sudo chown -R : desarrolladores /home/desa1/
+sudo chown -R :desarrolladores /home/desa1/
+ls -l /home/
+sudo ls -l /home/desa1/
+sudo chmod 771 /home/desa1/
+ls -l /home/
+su - pepe
+su - pepe
+su - pepe
+su - pepe
+su - pepe
+vagrant halt
+--help
+help
+logout
+sudo apt install git
+git clone https://github.com/upszot/UTN-FRA_SO_Bash.git
+ls -l
+cd UTN-FRA_SO_Bash/
+ls -l
+cat /etc/passwd
+cd ..
+vim hola.sh
+ls -l
+cat hola.sh
+sudo chmod u+x hola.sh
+ls -l
+./hola.sh
+vim hola.sh
+./hola.sh
+vim hola.sh
+./hola.sh 2 pepe 
+./home.sh pepe "hola como estas"
+vim hola.sh
+./hola.sh parametro1 2 parametro3
+vim hola.sh
+./hola.sh parametro1 2 parametro3
+vim for.sh
+ls -l
+sudo chmod u+x for.sh
+ls -l
+./for.sh
+vim for.sh
+cd UTN-FRA_SO_Bash/
+ls -l
+cd Bucle_for/
+ls
+cat 2_for_cmd_lista.txt
+cat 1_for_lista.sh
+vim 2_for_cmd_lista.sh
+./2_for_cmd_lista.sh 2_for_cmd_lista.txt
+vim 2_for_cmd_lista.sh
+cat /etc/passwd
+vim 2_for_cmd_lista.sh
+./2_for_cmd_lista.sh 2_for_cmd_lista.txt
+vim 2_for_cmd_lista.sh
+./2_for_cmd_lista.sh 2_for_cmd_lista.txt
+cat /etc/group
+cat /etc/passwd
+ls -l
+ls /home
+ls
+cd ..
+cd /Bucle_while
+ls
+cd /Bucle_while
+/Bucle_while
+cd Bucle_while
+ls
+vim 1_while_simple.sh 
+./1_while_simple.sh 
+vim 2_while_cmd_lista.sh
+cat 2_while_cmd_lista.txt
+vim 2_while_cmd_lista.sh
+./2_while_cmd_lista.sh 2_while_cmd_lista.txt
+cd ..
+ls
+cd Condicionales/
+ls
+vim case_example.sh 
+./case_example.sh 
+vim case_example.sh 
+./case_example.sh 1 a
+./case_example.sh a 1
+if_simple.sh
+vim if_simple.sh 
+./if_simple.sh 
+vim if_simple.sh 
+./if_simple.sh 2 1 hola hola
+vim if_multiple.sh 
+cd ..
+ls
+cd menu/
+ls
+vim select_menu.sh 
+./select_menu.sh 
+vagrant half
+vagrant halt
+cd ..
+vagrant halt
+-- help
+help
+logout
+ssh-keygen
+cat $HOME/.ssh/*pub
+cd home/
+cd /home/
+ls
+cd/home/pepe
+cd pepe/
+cd /pepe/
+cd vagrant/
+pwd /home/vagrant
+ls -la
+cd .ssh/
+ls -la
+cat id_rsa.pub
+cd ..
+ls
+mkdir repogit
+git clone git@github.com:Lauti27009/TP_AySO.git
+sudo apt install git
+git --version
+git clone git@github.com:Lauti27009/TP_AySO.git
+cp README TP_AySO/
+cd TP_AySO/
+ls -la
+git status
+ls
+git add README
+git status
+git commit -m "Se agrego el README"
+git config --global user.email "lauti27009@gmail.com"
+git config --global user.name "Lauti27009"
+git commit -m "Se agrego un README (de vuelta)"
+git push origin main
+git pish -u origin main
+git push -u origin main
+git push -u main origin
+cd ..
+ls
+man mv
+mv TP_AySO repogit/
+cd repogit/
+ls
+cd TP_AySO/
+ls -l
+kill README
+delete README
+-- help
+help --
+ls -l
+grep VAGRANT /etc/shadow
+sudo grep VAGRANT /etc/shadow
+sudo grep vagrant /etc/shadow
+man grep
+cd /repogit/TP_AySO
+cd repogit/TP_AySO/
+pwd
+sudo cat /etc/shadow
+grep vagrant /etc/shadow
+sudo grep vagrant /etc/shadow
+man cp
+man m
+man ls
+help
+help --
+-- help
+grep vagrant /etc/shadow
+sudo grep vagrant /etc/shadow
+cat << FIN > pass_usuario.txt
+Contraseña de Vagrant:
+$y$j9T$2OwgUap0.3RJHb7zUWePD0$Fk3v.1eNAsj.cDvDEFGvul5V/b6SNSDaNZ0ROBPTCd6:20694:0:99999:7:::
+FIN
+
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+ls
+git add.
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre pass_usuario.txt"
+git status
+git push
+git status
+cd ..
+ls -l
+tree .
+cat /etc/passwd
+sudo cat /etc/shadow
+ls
+ls -la
+cat << FIN > permisos.txt
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+cat permisos.txt
+rm permisos.txt
+cat << FIN > permisos.txt
+total 116
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+cat permisos.txt
+git status
+rm permisos.txt
+cd repogit/TP_AySO/
+cat << FIN > permisos.txt
+total 116
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+git status
+git add permisos.txt
+git commit -m "ADD: Añandiendo archivo permisos"
+git push
+cat /etc/passwd
+man grep
+grep vagrant /etc/passwd
+cat /etc/passwd
+cd repogit/TP_AySO/
+cat << FIN > lista_ordenada
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+
+FIN
+
+ls
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+git push
+git status
+git push
+git puag
+git push
+logout
+cd repogit/
+cd TP_AySO/
+ls
+git push
+cd .
+cd ..
+git push
+ls
+cd repogit/
+ls
+cd TP_AySO/
+git push
+git status
+ping -c 3 8.8.8.8
+git push
+logout
+grep /etc/passwd
+cd repogit/TP_AySO/
+git push
+man HereDoc
+cat << FIN >> README.md
+Alumno: Lautaro Abarca
+Division: 111
+Turno: Mañana
+FIN
+
+git status
+git add README.md
+git push
+cat README.md
+git push
+code README.md
+git restore README.md
+cat README.md
+git push -u orgin main
+git push -u origin main
+docs
+fix README.md
+cd repogit/TP_AySO/
+cat << 'EOF' > README.md
+# TP AySO
+**Alumno:** Lautaro Abarca
+**Division:** 111
+**Turno:** Mañana
+FIN
+EOF
+
+cat README.md
+cat << 'EOF' > README.md
+# TP AySO
+**Alumno:** Lautaro Abarca
+**Division:** 111
+**Turno:** Mañana
+EOF
+
+git status
+git add README.md
+git commit -m "docs: se agrego los datos del alumno en la estructura del README"
+git push
+cd ..
+mkdir -p universidad/{alumnos/legajos{1..15},profesores/legajos{1..5}}
+tree universidad
+cd repogit/TP_AySO/
+cat << FIN > script_dir.sh
+FIN
+
+git add .
+git commit -m "ADD: Añandiendo script"
+git push
+history -a
+cat $HOME/.bash_history
+cat << FIN > Historial_comandos_Lautaro_Abarca.txt
+ssh-keygen
+cat $HOME/.ssh/*pub
+cd home/
+cd /home/
+ls
+cd/home/pepe
+cd pepe/
+cd /pepe/
+cd vagrant/
+pwd /home/vagrant
+ls -la
+cd .ssh/
+ls -la
+cat id_rsa.pub
+cd ..
+ls
+mkdir repogit
+git clone git@github.com:Lauti27009/TP_AySO.git
+sudo apt install git
+git --version
+git clone git@github.com:Lauti27009/TP_AySO.git
+cp README TP_AySO/
+cd TP_AySO/
+ls -la
+git status
+ls
+git add README
+git status
+git commit -m "Se agrego el README"
+git config --global user.email "lauti27009@gmail.com"
+git config --global user.name "Lauti27009"
+git commit -m "Se agrego un README (de vuelta)"
+git push origin main
+git pish -u origin main
+git push -u origin main
+git push -u main origin
+cd ..
+ls
+man mv
+mv TP_AySO repogit/
+cd repogit/
+ls
+cd TP_AySO/
+ls -l
+kill README
+delete README
+-- help
+help --
+ls -l
+grep VAGRANT /etc/shadow
+sudo grep VAGRANT /etc/shadow
+sudo grep vagrant /etc/shadow
+man grep
+cd /repogit/TP_AySO
+cd repogit/TP_AySO/
+pwd
+sudo cat /etc/shadow
+grep vagrant /etc/shadow
+sudo grep vagrant /etc/shadow
+man cp
+man m
+man ls
+help
+help --
+-- help
+grep vagrant /etc/shadow
+sudo grep vagrant /etc/shadow
+cat << FIN > pass_usuario.txt
+Contraseña de Vagrant:
+$y$j9T$2OwgUap0.3RJHb7zUWePD0$Fk3v.1eNAsj.cDvDEFGvul5V/b6SNSDaNZ0ROBPTCd6:20694:0:99999:7:::
+FIN
+
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+ls
+git add.
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre pass_usuario.txt"
+git status
+git push
+git status
+cd ..
+ls -l
+tree .
+cat /etc/passwd
+sudo cat /etc/shadow
+ls
+ls -la
+cat << FIN > permisos.txt
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+cat permisos.txt
+rm permisos.txt
+cat << FIN > permisos.txt
+total 116
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+cat permisos.txt
+git status
+rm permisos.txt
+cd repogit/TP_AySO/
+cat << FIN > permisos.txt
+total 116
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+git status
+git add permisos.txt
+git commit -m "ADD: Añandiendo archivo permisos"
+git push
+cat /etc/passwd
+man grep
+grep vagrant /etc/passwd
+cat /etc/passwd
+cd repogit/TP_AySO/
+cat << FIN > lista_ordenada
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+
+FIN
+
+ls
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+git push
+git status
+git push
+git puag
+git push
+logout
+cd repogit/TP_AySO/
+ls
+cat Historial_comandos_Lautaro_Abarca.txt 
+rm Historial_comandos_Lautaro_Abarca.txt 
+cd ..
+ls
+cd repogit/TP_AySO/
+ls
+rm README
+ls
+rm script_dir.sh
+git status
+git add .
+git push
+git status
+git push
+git push -u origin main
+git push
+git status
+git commit -m "Se eliminaron los archivos"
+git push
+cat << EOF >> script_dir.sh
+EOF
+
+vim script_dir.sh 
+sudo chmod 777 script_dir.sh 
+./script_dir.sh
+ls
+git add .
+git commit -m "Añandiendo script"
+git push
+history -a
+$HOME/.bash_history
+sudo $HOME/.bash_history
+cat $HOME/.bash_history
+cat << FIN > Historial_comandos_Abarca_Lautaro.txt
+ssh-keygen
+cat $HOME/.ssh/*pub
+cd home/
+cd /home/
+ls
+cd/home/pepe
+cd pepe/
+cd /pepe/
+cd vagrant/
+pwd /home/vagrant
+ls -la
+cd .ssh/
+ls -la
+cat id_rsa.pub
+cd ..
+ls
+mkdir repogit
+git clone git@github.com:Lauti27009/TP_AySO.git
+sudo apt install git
+git --version
+git clone git@github.com:Lauti27009/TP_AySO.git
+cp README TP_AySO/
+cd TP_AySO/
+ls -la
+git status
+ls
+git add README
+git status
+git commit -m "Se agrego el README"
+git config --global user.email "lauti27009@gmail.com"
+git config --global user.name "Lauti27009"
+git commit -m "Se agrego un README (de vuelta)"
+git push origin main
+git pish -u origin main
+git push -u origin main
+git push -u main origin
+cd ..
+ls
+man mv
+mv TP_AySO repogit/
+cd repogit/
+ls
+cd TP_AySO/
+ls -l
+kill README
+delete README
+-- help
+help --
+ls -l
+grep VAGRANT /etc/shadow
+sudo grep VAGRANT /etc/shadow
+sudo grep vagrant /etc/shadow
+man grep
+cd /repogit/TP_AySO
+cd repogit/TP_AySO/
+pwd
+sudo cat /etc/shadow
+grep vagrant /etc/shadow
+sudo grep vagrant /etc/shadow
+man cp
+man m
+man ls
+help
+help --
+-- help
+grep vagrant /etc/shadow
+sudo grep vagrant /etc/shadow
+cat << FIN > pass_usuario.txt
+Contraseña de Vagrant:
+$y$j9T$2OwgUap0.3RJHb7zUWePD0$Fk3v.1eNAsj.cDvDEFGvul5V/b6SNSDaNZ0ROBPTCd6:20694:0:99999:7:::
+FIN
+
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+ls
+git add.
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre pass_usuario.txt"
+git status
+git push
+git status
+cd ..
+ls -l
+tree .
+cat /etc/passwd
+sudo cat /etc/shadow
+ls
+ls -la
+cat << FIN > permisos.txt
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+cat permisos.txt
+rm permisos.txt
+cat << FIN > permisos.txt
+total 116
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+cat permisos.txt
+git status
+rm permisos.txt
+cd repogit/TP_AySO/
+cat << FIN > permisos.txt
+total 116
+drwxr-x--x 12 vagrant vagrant  4096 Oct  4 18:31 .
+drwxr-xr-x  8 root    root     4096 Sep 30 13:54 ..
+-rw-------  1 vagrant vagrant  5816 Oct  4 18:51 .bash_history
+-rw-r--r--  1 vagrant vagrant   220 Aug 29 11:08 .bash_logout
+-rw-r--r--  1 vagrant vagrant  4251 Sep  9 14:25 .bashrc
+drwx------  2 vagrant vagrant  4096 Sep  9 14:25 .cache
+-rw-rw-r--  1 vagrant vagrant    56 Oct  4 17:56 .gitconfig
+-rw-------  1 vagrant vagrant    20 Oct  4 18:31 .lesshst
+-rw-r--r--  1 vagrant vagrant   807 Aug 29 11:08 .profile
+drwx------  2 vagrant vagrant  4096 Oct  4 17:51 .ssh
+-rw-------  1 vagrant vagrant 15640 Sep 30 14:31 .viminfo
+-rw-r--r--  1 root    root        5 Sep  9 14:25 README
+drwxrwxr-x 10 vagrant vagrant  4096 Sep 30 12:50 UTN-FRA_SO_Bash
+-rw-rw-r--  1 vagrant vagrant    36 Sep 16 13:45 archivo.txt
+drwxrwxrwx  1 vagrant vagrant  4096 Sep  9 14:15 carpeta_compartida
+-rw-rw-r--  1 vagrant vagrant    15 Sep 23 13:28 ejemplo.txt
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:48 ejercicio1
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:54 ejercicio2
+drwxrwxr-x  4 vagrant vagrant  4096 Sep 23 11:57 ejercicio3
+-rwxrw-r--  1 vagrant vagrant    60 Sep 30 13:35 for.sh
+drwxr-xr-x  2 root    root     4096 Sep 23 13:43 hola
+-rwxrw-r--  1 vagrant vagrant   338 Sep 30 13:26 hola.sh
+drwxrwxr-x  4 vagrant vagrant  4096 Oct  4 18:09 repogit
+drwx------  3 vagrant vagrant  4096 Sep 23 11:43 snap
+
+FIN
+
+git status
+git add permisos.txt
+git commit -m "ADD: Añandiendo archivo permisos"
+git push
+cat /etc/passwd
+man grep
+grep vagrant /etc/passwd
+cat /etc/passwd
+cd repogit/TP_AySO/
+cat << FIN > lista_ordenada
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+
+FIN
+
+ls
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+git push
+git status
+git push
+git puag
+git push
+logout
+cd repogit/TP_AySO/
+rm Historial_comandos_Abarca_Lautaro.txt 
+ls
+cat datos_usuario.txt
+rm datos_usuario.txt 
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+git status
+git add .
+git commit -m "ADD: Se agrego de vuelta los datos del usuario por los problemas de agregar el historial de comandos"
+git push
+history -a
+logout
+ls
+cd snap/
+ls
+cd tree/
+ls
+cd 54/
+ls
+cd ..
+sudo cat /etc/passwd
+sudo cat /etc/shadow
+ls -la
+logout
+ls -la
+cd repogit/TP_AySO/
+mv .bash_history Historial_Comandos_Abarca_Lautaro.txt
+man mv
+cp .bash_history Historial_Comandos_Abarca_Lautaro.txt
+cp bash_history Historial_Comandos_Abarca_Lautaro.txt
+cp .bash_history > Historial_Comandos_Abarca_Lautaro.txt
+man cp
+cd ..
